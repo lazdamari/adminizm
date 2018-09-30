@@ -1,0 +1,21 @@
+.input-form-error {
+	font-size:12px;
+	color :#ff5b5b;
+}
+
+
+td {
+    vertical-align: middle!important;
+}
+
+.sortable
+{
+    cursor: move;
+}
+/*.image_list_container {*/
+    /*display; none;*/
+/*}*/
+
+.video_url_container {
+    display: none;
+}
