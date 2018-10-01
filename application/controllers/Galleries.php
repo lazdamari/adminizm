@@ -16,6 +16,9 @@ class Galleries extends CI_Controller
         $this->load->model("resim_model");
         $this->load->model("file_model");
         $this->load->model("video_model");
+        if (!get_active_user()) {
+            redirect(base_url("login"));
+        }
     }
 
     public function index()

@@ -12,7 +12,9 @@ class Brand extends CI_Controller
         $this->viewFolder = "brands_v";
 
         $this->load->model("brand_model");
-
+        if (!get_active_user()) {
+            redirect(base_url("login"));
+        }
     }
 
     public function index()

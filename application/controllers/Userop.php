@@ -17,6 +17,9 @@ class Userop extends CI_Controller
 
     public function login()
     {
+        if (get_active_user()) {
+            redirect(base_url());
+        }
         $viewData = new stdClass();
         $this->load->library("form_validation");
 
@@ -28,6 +31,9 @@ class Userop extends CI_Controller
 
     public function do_login()
     {
+        if (get_active_user()) {
+            redirect(base_url());
+        }
         $this->load->library("form_validation");
 
         $this->form_validation->set_rules("user_email", "E-Posta Adresi", "required|trim|valid_email");
@@ -57,6 +63,7 @@ class Userop extends CI_Controller
                 array(
                     "email" => $this->input->post("user_email"),
                     "password" => md5($this->input->post("user_password")),
+                    "isActive" => 1
                 )
             );
 
@@ -78,6 +85,46 @@ class Userop extends CI_Controller
                 redirect(base_url("login"));
             }
         }
+
+    }
+
+    public function logout()
+    {
+        $this->session->unset_userdata('user');
+        redirect(base_url("login"));
+    }
+
+    public function send_email()
+    {
+
+        $config = array(
+            "protocol" => "smtp",
+            "smtp_host" => "mail.ensargunaydin.net",
+            "smtp_port" => "587",
+            "smtp_user" => "info@ensargunaydin.net",
+            "smtp_pass" => "22645334Eg",
+            "starttls" => true,
+            "charset" => "utf-8",
+            "mailtype" => "html",
+            "wordwrap" => true,
+            "newline" => "\r\n"
+        );
+
+        $this->load->library("email", $config);
+
+        $this->email->from("info@ensargunaydin.net", "CMS");
+        $this->email->to("ensargunaydin7@gmail.com");
+        $this->email->subject("CMS email kou");
+        $this->email->message("deneme eposta");
+
+        $send = $this->email->send();
+
+        if ($send) {
+            echo "başarılı";
+        } else {
+            $this->email->print_debugger();
+        }
+
 
     }
 }

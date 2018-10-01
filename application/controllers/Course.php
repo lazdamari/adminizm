@@ -12,7 +12,9 @@ class Course extends CI_Controller
         $this->viewFolder = "courses_v";
 
         $this->load->model("course_model");
-
+        if (!get_active_user()) {
+            redirect(base_url("login"));
+        }
     }
 
     public function index()
