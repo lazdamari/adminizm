@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Anamakine: 127.0.0.1:3306
--- Üretim Zamanı: 30 Eyl 2018, 18:55:36
+-- Üretim Zamanı: 01 Eki 2018, 15:03:17
 -- Sunucu sürümü: 5.7.21
--- PHP Sürümü: 7.2.4
+-- PHP Sürümü: 5.6.35
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -58,6 +58,27 @@ CREATE TABLE IF NOT EXISTS `courses` (
   `createdAt` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_turkish_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Tablo için tablo yapısı `email_settings`
+--
+
+DROP TABLE IF EXISTS `email_settings`;
+CREATE TABLE IF NOT EXISTS `email_settings` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `protocol` varchar(50) COLLATE utf8_turkish_ci NOT NULL,
+  `host` varchar(150) COLLATE utf8_turkish_ci NOT NULL,
+  `port` varchar(10) COLLATE utf8_turkish_ci NOT NULL,
+  `user` varchar(100) COLLATE utf8_turkish_ci NOT NULL,
+  `password` varchar(50) COLLATE utf8_turkish_ci NOT NULL,
+  `gonderici` varchar(100) COLLATE utf8_turkish_ci NOT NULL,
+  `alici` varchar(100) COLLATE utf8_turkish_ci NOT NULL,
+  `user_name` varchar(100) COLLATE utf8_turkish_ci NOT NULL,
+  `isActive` tinyint(1) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_turkish_ci;
 
 -- --------------------------------------------------------
 
@@ -349,14 +370,15 @@ CREATE TABLE IF NOT EXISTS `users` (
   `isActive` tinyint(4) DEFAULT NULL,
   `createdAt` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_turkish_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_turkish_ci;
 
 --
 -- Tablo döküm verisi `users`
 --
 
 INSERT INTO `users` (`id`, `kullanici_adi`, `full_name`, `email`, `password`, `isActive`, `createdAt`) VALUES
-(1, 'ensargunaydin', 'Ensar Günaydın', 'info@ensargunaydin.net', '123123', 0, NULL);
+(3, 'admin', 'Administrator', 'info@adminizm.net', 'e10adc3949ba59abbe56e057f20f883e', 1, '2018-10-01 10:04:08'),
+(4, 'fatihsoyler', 'Fatih Söyler', 'fatih@soyler.com', 'e10adc3949ba59abbe56e057f20f883e', 0, '2018-10-01 12:23:13');
 
 -- --------------------------------------------------------
 
