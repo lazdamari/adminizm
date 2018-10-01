@@ -137,12 +137,12 @@ class Users extends CI_Controller
                 "id" => $id
             )
         );
-        
-        if ($oldUser->kullanici_adi != $this->input->post("user_name")){
+
+        if ($oldUser->kullanici_adi != $this->input->post("user_name")) {
             $this->form_validation->set_rules("user_name", "Kullanıcı Adı", "required|trim|is_unique[users.kullanici_adi]");
         }
 
-        if ($oldUser->email != $this->input->post("email")){
+        if ($oldUser->email != $this->input->post("email")) {
             $this->form_validation->set_rules("email", "E-Posta Adresi", "required|trim|valid_email|is_unique[users.email]");
         }
         // Kurallar yazilir..
@@ -184,7 +184,6 @@ class Users extends CI_Controller
                 );
 
 
-
             }
 
 
@@ -209,15 +208,15 @@ class Users extends CI_Controller
             $this->load->view("{$viewData->viewFolder}/{$viewData->subViewFolder}/index", $viewData);
         }
     }
-    
+
     public function update_password($id)
     {
 
         $this->load->library("form_validation");
-        
+
         $this->form_validation->set_rules("password", "Şifre", "required|trim|min_length[6]|max_length[10]");
         $this->form_validation->set_rules("re_password", "Şifre Tekrar", "required|trim|min_length[6]|max_length[10]|matches[password]");
-      
+
         // Kurallar yazilir..
 
         $this->form_validation->set_message(
@@ -299,7 +298,7 @@ class Users extends CI_Controller
 
 
     }
-    
+
     public function update_password_form($id)
     {
 
@@ -321,7 +320,7 @@ class Users extends CI_Controller
 
 
     }
-    
+
     public function delete($id)
 
     {
@@ -400,6 +399,21 @@ class Users extends CI_Controller
 
         }
 
+    }
+
+
+    /**
+     * @return object
+     */
+    public function login()
+    {
+        $viewData = new stdClass();
+
+        $viewData->viewFolder = $this->viewFolder;
+        $viewData->subViewFolder = "login";
+
+
+        $this->load->view("{$viewData->viewFolder}/{$viewData->subViewFolder}/index", $viewData);
     }
 
 }
