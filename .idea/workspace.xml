@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="150e7fd9-cd8c-443b-a4c6-45429ce039d4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/config/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/routes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Brand.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Brand.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Course.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Course.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Dashboard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Galleries.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Galleries.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/News.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/News.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/References.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/References.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Userop.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Userop.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Users.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/includes/left-aside.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/includes/left-aside.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/includes/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/includes/navbar.php" afterDir="false" />
-    </list>
+    <list default="true" id="150e7fd9-cd8c-443b-a4c6-45429ce039d4" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,8 +46,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/Userop.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="99" column="24" lean-forward="true" selection-start-line="99" selection-start-column="24" selection-end-line="99" selection-end-column="24" />
+            <state relative-caret-position="300">
+              <caret line="105" column="31" lean-forward="true" selection-start-line="105" selection-start-column="31" selection-end-line="105" selection-end-column="31" />
               <folding>
                 <element signature="n#__construct#0;n#Userop#0;n#!!top" />
                 <element signature="n#login#0;n#Userop#0;n#!!top" />
@@ -131,7 +117,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="74" />
     <option name="y" value="-15" />
     <option name="width" value="1366" />
@@ -201,15 +187,15 @@
       <updated>1538374895154</updated>
       <workItem from="1538374899845" duration="9227000" />
       <workItem from="1538394784251" duration="2799000" />
-      <workItem from="1538400447746" duration="736000" />
+      <workItem from="1538400447746" duration="1390000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12762000" />
+    <option name="totallyTimeSpent" value="13416000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="886" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.150625" />
@@ -376,8 +362,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Userop.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="99" column="24" lean-forward="true" selection-start-line="99" selection-start-column="24" selection-end-line="99" selection-end-column="24" />
+        <state relative-caret-position="300">
+          <caret line="105" column="31" lean-forward="true" selection-start-line="105" selection-start-column="31" selection-end-line="105" selection-end-column="31" />
           <folding>
             <element signature="n#__construct#0;n#Userop#0;n#!!top" />
             <element signature="n#login#0;n#Userop#0;n#!!top" />
