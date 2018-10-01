@@ -2,36 +2,27 @@
     <div class="simple-page-logo animated swing">
         <a href="index.html">
             <span><i class="fa fa-gg"></i></span>
-            <span>Infinity</span>
+            <span>{ <b>adminizm</b> }</span>
         </a>
     </div><!-- logo -->
     <div class="simple-page-form animated flipInY" id="login-form">
-        <h4 class="form-title m-b-xl text-center">Sign In With Your Infinity Account</h4>
-        <form action="#">
+        <form action="<?php echo base_url("userop/do_login");?>" method="post">
             <div class="form-group">
-                <input id="sign-in-email" type="email" class="form-control" placeholder="Email">
+                <input id="sign-in-email" type="email" class="form-control" name="user_email" placeholder="E-Posta Adresi">
+                <?php if (isset($form_error)) { ?>
+                    <small class="input-form-error"><?php echo form_error("user_email") ?></small>
+                <?php } ?>
             </div>
 
             <div class="form-group">
-                <input id="sign-in-password" type="password" class="form-control" placeholder="Password">
+                <input id="sign-in-password" type="password" class="form-control" name="user_password" placeholder="Şifre">
             </div>
-
-            <div class="form-group m-b-xl">
-                <div class="checkbox checkbox-primary">
-                    <input type="checkbox" id="keep_me_logged_in"/>
-                    <label for="keep_me_logged_in">Keep me signed in</label>
-                </div>
-            </div>
-            <input type="submit" class="btn btn-primary" value="SING IN">
+            <button type="submit" class="btn btn-primary">Giriş Yap</button>
         </form>
     </div><!-- #login-form -->
 
     <div class="simple-page-footer">
-        <p><a href="password-forget.html">FORGOT YOUR PASSWORD ?</a></p>
-        <p>
-            <small>Don't have an account ?</small>
-            <a href="signup.html">CREATE AN ACCOUNT</a>
-        </p>
+        <p><a href="password-forget.html">Şifremi Unuttum</a></p>
     </div><!-- .simple-page-footer -->
 
 

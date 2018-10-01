@@ -36,13 +36,12 @@ class Users extends CI_Controller
     public function new_form()
     {
 
-        $viewdata = new stdclass();
 
-        /** view'e gönderilecek değişkenlerin set edilmesi.. */
-        $viewdata->viewfolder = $this->viewfolder;
-        $viewdata->subviewfolder = "add";
+        $viewData = new stdClass();
+        $viewData->viewFolder = $this->viewFolder;
+        $viewData->subViewFolder = "add";
+        $this->load->view("{$this->viewFolder}/{$viewData->subViewFolder}/index", $viewData);
 
-        $this->load->view("{$viewdata->viewfolder}/{$viewdata->subviewfolder}/index", $viewdata);
 
     }
 
@@ -405,15 +404,6 @@ class Users extends CI_Controller
     /**
      * @return object
      */
-    public function login()
-    {
-        $viewData = new stdClass();
 
-        $viewData->viewFolder = $this->viewFolder;
-        $viewData->subViewFolder = "login";
-
-
-        $this->load->view("{$viewData->viewFolder}/{$viewData->subViewFolder}/index", $viewData);
-    }
 
 }

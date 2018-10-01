@@ -12,3 +12,14 @@
         setlocale(LC_ALL, 'tr_TR.UTF-8');
         return strftime('%d %B %Y',strtotime($date));
     }
+
+    function get_active_user(){
+	    $t = &get_instance();
+	    $user = $t->session->userdata("user");
+	    if ($user){
+	        return $user;
+        }
+        else {
+            return false;
+        }
+    }
