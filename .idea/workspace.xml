@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="150e7fd9-cd8c-443b-a4c6-45429ce039d4" name="Default Changelist" comment="" />
+    <list default="true" id="150e7fd9-cd8c-443b-a4c6-45429ce039d4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Userop.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Userop.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,11 +15,12 @@
     <session id="-1902124036">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -31,12 +35,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="php" value="2025" />
+          <entry key="php" value="2026" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="2025" />
+          <entry key="PHP" value="2026" />
         </counts>
       </usages-collector>
     </session>
@@ -46,8 +50,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/Userop.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="105" column="31" lean-forward="true" selection-start-line="105" selection-start-column="31" selection-end-line="105" selection-end-column="31" />
+            <state relative-caret-position="92">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
               <folding>
                 <element signature="n#__construct#0;n#Userop#0;n#!!top" />
                 <element signature="n#login#0;n#Userop#0;n#!!top" />
@@ -57,6 +61,10 @@
                 <element signature="e#998#1228#0#PHP" />
                 <element signature="e#1047#1218#1#PHP" />
                 <element signature="n#logout#0;n#Userop#0;n#!!top" />
+                <element signature="n#send_email#0;n#Userop#0;n#!!top" />
+                <element signature="e#2822#3217#0#PHP" />
+                <element signature="e#3528#3640#0#PHP" />
+                <element signature="e#3580#3640#0#PHP" />
               </folding>
             </state>
           </provider>
@@ -187,15 +195,16 @@
       <updated>1538374895154</updated>
       <workItem from="1538374899845" duration="9227000" />
       <workItem from="1538394784251" duration="2799000" />
-      <workItem from="1538400447746" duration="1390000" />
+      <workItem from="1538400447746" duration="1396000" />
+      <workItem from="1538546074420" duration="263000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13416000" />
+    <option name="totallyTimeSpent" value="13685000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="886" extended-state="7" />
+    <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.150625" />
@@ -362,8 +371,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Userop.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="105" column="31" lean-forward="true" selection-start-line="105" selection-start-column="31" selection-end-line="105" selection-end-column="31" />
+        <state relative-caret-position="92">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
           <folding>
             <element signature="n#__construct#0;n#Userop#0;n#!!top" />
             <element signature="n#login#0;n#Userop#0;n#!!top" />
@@ -373,6 +382,10 @@
             <element signature="e#998#1228#0#PHP" />
             <element signature="e#1047#1218#1#PHP" />
             <element signature="n#logout#0;n#Userop#0;n#!!top" />
+            <element signature="n#send_email#0;n#Userop#0;n#!!top" />
+            <element signature="e#2822#3217#0#PHP" />
+            <element signature="e#3528#3640#0#PHP" />
+            <element signature="e#3580#3640#0#PHP" />
           </folding>
         </state>
       </provider>

@@ -2,7 +2,6 @@
 
 class Userop extends CI_Controller
 {
-
     public $viewFolder = "";
 
     public function __construct()
