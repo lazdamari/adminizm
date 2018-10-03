@@ -2,8 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="150e7fd9-cd8c-443b-a4c6-45429ce039d4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/application/controllers/Emailsettings.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/models/Emailsettings_model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/email_settings_v/add/content.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/email_settings_v/add/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/email_settings_v/add/page_script.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/email_settings_v/list/content.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/email_settings_v/list/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/email_settings_v/login/content.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/email_settings_v/login/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/email_settings_v/login/page_script.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/email_settings_v/login/page_style.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/email_settings_v/password/content.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/email_settings_v/password/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/email_settings_v/password/page_script.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/email_settings_v/update/content.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/email_settings_v/update/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/email_settings_v/update/page_script.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Userop.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Userop.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/includes/left-aside.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/includes/left-aside.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,66 +32,88 @@
     <session id="-1902124036">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="php" value="36" />
+          <entry key="php" value="45" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PHP" value="36" />
+          <entry key="PHP" value="45" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="php" value="2026" />
+          <entry key="php" value="2864" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="2026" />
+          <entry key="PHP" value="2864" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/Userop.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="280">
+              <caret line="37" column="97" selection-start-line="37" selection-start-column="89" selection-end-line="37" selection-end-column="97" />
               <folding>
                 <element signature="n#__construct#0;n#Userop#0;n#!!top" />
                 <element signature="n#login#0;n#Userop#0;n#!!top" />
-                <element signature="e#279#347#0#PHP" />
-                <element signature="n#do_login#0;n#Userop#0;n#!!top" />
-                <element signature="e#680#748#0#PHP" />
-                <element signature="e#998#1228#0#PHP" />
-                <element signature="e#1047#1218#1#PHP" />
+                <element signature="e#278#346#0#PHP" />
+                <element signature="e#679#747#0#PHP" />
                 <element signature="n#logout#0;n#Userop#0;n#!!top" />
-                <element signature="n#send_email#0;n#Userop#0;n#!!top" />
-                <element signature="e#2822#3217#0#PHP" />
-                <element signature="e#3528#3640#0#PHP" />
-                <element signature="e#3580#3640#0#PHP" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/config/routes.php">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/controllers/Emailsettings.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1311">
-              <caret line="57" column="14" selection-start-line="57" selection-start-column="14" selection-end-line="57" selection-end-column="14" />
+            <state relative-caret-position="1725">
+              <caret line="78" column="57" lean-forward="true" selection-start-line="78" selection-start-column="57" selection-end-line="78" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/Users.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/email_settings_v/list/content.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#!!top" />
+                <element signature="n#h4#0;n#div#0;n#div#0;n#!!top" />
+                <element signature="e#123#128#0#PHP" />
+                <element signature="n#a#0;n#h4#0;n#div#0;n#div#0;n#!!top" />
+                <element signature="n#i#0;n#a#0;n#h4#0;n#div#0;n#div#0;n#!!top" />
+                <element signature="n#thead#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" />
+                <element signature="n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,7 +128,17 @@
       <find>viewFolder</find>
       <find>subViewFolder</find>
       <find>Infi</find>
+      <find>&quot;users&quot;</find>
+      <find>user_model</find>
+      <find>email</find>
+      <find>users</find>
+      <find>valid_em</find>
     </findStrings>
+    <replaceStrings>
+      <replace>&quot;emailsettings&quot;</replace>
+      <replace>emailsettings_model</replace>
+      <replace>emailsettings</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -113,9 +162,14 @@
         <option value="$PROJECT_DIR$/application/controllers/References.php" />
         <option value="$PROJECT_DIR$/application/controllers/Users.php" />
         <option value="$PROJECT_DIR$/application/views/includes/navbar.php" />
-        <option value="$PROJECT_DIR$/application/views/includes/left-aside.php" />
         <option value="$PROJECT_DIR$/application/config/routes.php" />
         <option value="$PROJECT_DIR$/application/controllers/Userop.php" />
+        <option value="$PROJECT_DIR$/application/controllers/Emailsetting.php" />
+        <option value="$PROJECT_DIR$/application/models/Emailsettings_model.php" />
+        <option value="$PROJECT_DIR$/application/views/includes/left-aside.php" />
+        <option value="$PROJECT_DIR$/application/views/email_settings_v/list/content.php" />
+        <option value="$PROJECT_DIR$/application/controllers/Emailsettings.php" />
+        <option value="$PROJECT_DIR$/application/views/email_settings_v/add/content.php" />
       </list>
     </option>
   </component>
@@ -157,6 +211,27 @@
               <item name="application" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="adminizm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adminizm" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adminizm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adminizm" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="email_settings_v" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adminizm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adminizm" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="email_settings_v" type="462c0819:PsiDirectoryNode" />
+              <item name="add" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -165,11 +240,18 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="routes&#9;FILE&#9;file://C:/wamp64/www/cms/adminizm/application/config/routes.php&#10;left-&#9;FILE&#9;file://C:/wamp64/www/cms/adminizm/application/views/includes/left-aside.php" />
+    <property name="SearchEverywhereHistoryKey" value="left-&#9;FILE&#9;file://C:/wamp64/www/cms/adminizm/application/views/includes/left-aside.php&#10;left-as&#9;null&#9;null&#10;routes&#9;FILE&#9;file://C:/wamp64/www/cms/adminizm/application/config/routes.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\cms\adminizm\application\views" />
+      <recent name="C:\wamp64\www\cms\adminizm\application\models" />
+      <recent name="C:\wamp64\www\cms\adminizm\application\controllers" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -196,12 +278,14 @@
       <workItem from="1538374899845" duration="9227000" />
       <workItem from="1538394784251" duration="2799000" />
       <workItem from="1538400447746" duration="1396000" />
-      <workItem from="1538546074420" duration="263000" />
+      <workItem from="1538546074420" duration="4868000" />
+      <workItem from="1538563525790" duration="634000" />
+      <workItem from="1538576793628" duration="2560000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13685000" />
+    <option name="totallyTimeSpent" value="21484000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
@@ -348,20 +432,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Users.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="16" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/includes/left-aside.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="30" column="65" lean-forward="true" selection-start-line="30" selection-start-column="65" selection-end-line="30" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/includes/navbar.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -369,31 +439,82 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="38" column="53" lean-forward="true" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/email_settings_v/add/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Emailsettings_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/includes/left-aside.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="56" column="72" selection-start-line="56" selection-start-column="72" selection-end-line="56" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Users.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Userop.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="280">
+          <caret line="37" column="97" selection-start-line="37" selection-start-column="89" selection-end-line="37" selection-end-column="97" />
           <folding>
             <element signature="n#__construct#0;n#Userop#0;n#!!top" />
             <element signature="n#login#0;n#Userop#0;n#!!top" />
-            <element signature="e#279#347#0#PHP" />
-            <element signature="n#do_login#0;n#Userop#0;n#!!top" />
-            <element signature="e#680#748#0#PHP" />
-            <element signature="e#998#1228#0#PHP" />
-            <element signature="e#1047#1218#1#PHP" />
+            <element signature="e#278#346#0#PHP" />
+            <element signature="e#679#747#0#PHP" />
             <element signature="n#logout#0;n#Userop#0;n#!!top" />
-            <element signature="n#send_email#0;n#Userop#0;n#!!top" />
-            <element signature="e#2822#3217#0#PHP" />
-            <element signature="e#3528#3640#0#PHP" />
-            <element signature="e#3580#3640#0#PHP" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/routes.php">
+    <entry file="file://$PROJECT_DIR$/application/views/email_settings_v/list/content.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1311">
-          <caret line="57" column="14" selection-start-line="57" selection-start-column="14" selection-end-line="57" selection-end-column="14" />
+        <state relative-caret-position="276">
+          <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#!!top" />
+            <element signature="n#h4#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="e#123#128#0#PHP" />
+            <element signature="n#a#0;n#h4#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#i#0;n#a#0;n#h4#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#thead#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" />
+            <element signature="n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/email_settings_v/add/content.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="16" column="92" selection-start-line="16" selection-start-column="92" selection-end-line="16" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Emailsettings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1725">
+          <caret line="78" column="57" lean-forward="true" selection-start-line="78" selection-start-column="57" selection-end-line="78" selection-end-column="57" />
         </state>
       </provider>
     </entry>
