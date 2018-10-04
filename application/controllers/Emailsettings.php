@@ -129,22 +129,18 @@ class Emailsettings extends CI_Controller
     public function update($id)
     {
 
+
         $this->load->library("form_validation");
-        $oldUser = $this->emailsettings_model->get(
-            array(
-                "id" => $id
-            )
-        );
 
-        if ($oldUser->kullanici_adi != $this->input->post("user_name")) {
-            $this->form_validation->set_rules("user_name", "Kullanıcı Adı", "required|trim|is_unique[users.kullanici_adi]");
-        }
 
-        if ($oldUser->email != $this->input->post("email")) {
-            $this->form_validation->set_rules("email", "E-Posta Adresi", "required|trim|valid_email|is_unique[users.email]");
-        }
         // Kurallar yazilir..
-        $this->form_validation->set_rules("full_name", "Ad Soyad", "required|trim");
+        $this->form_validation->set_rules("protokol", "Protokol", "required|trim");
+        $this->form_validation->set_rules("host", "E-Posta Sunucu", "required|trim");
+        $this->form_validation->set_rules("port", "Port Numarası", "required|trim");
+        $this->form_validation->set_rules("user", "E-Posta Adresi", "required|trim|valid_email");
+        $this->form_validation->set_rules("user_name", "E-Posta Başlık", "required|trim");
+        $this->form_validation->set_rules("gonderici", "Gönderici E-Posta Adresi", "required|trim|valid_email");
+        $this->form_validation->set_rules("alici", "Alıcı E-Posta Adresi", "required|trim|valid_email");
 
         $this->form_validation->set_message(
             array(
@@ -163,9 +159,14 @@ class Emailsettings extends CI_Controller
             $update = $this->emailsettings_model->update(
                 array("id" => $id),
                 array(
-                    "kullanici_adi" => $this->input->post("user_name"),
-                    "full_name" => $this->input->post("full_name"),
-                    "email" => $this->input->post("email"),
+                    "protocol" => $this->input->post("protokol"),
+                    "host" => $this->input->post("host"),
+                    "port" => $this->input->post("port"),
+                    "user" => $this->input->post("user"),
+                    "user_name" => $this->input->post("user_name"),
+                    "password" => $this->input->post("password"),
+                    "gonderici" => $this->input->post("gonderici"),
+                    "alici" => $this->input->post("alici"),
                 )
             );
 

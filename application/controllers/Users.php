@@ -238,7 +238,7 @@ class Users extends CI_Controller
             $update = $this->user_model->update(
                 array("id" => $id),
                 array(
-                    "password" => $this->input->post("password"),
+                    "password" => md5($this->input->post("password")),
                 )
             );
 
