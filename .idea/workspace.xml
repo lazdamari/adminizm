@@ -2,18 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="150e7fd9-cd8c-443b-a4c6-45429ce039d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/application/views/users_v/forget_password/content.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/users_v/forget_password/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/users_v/forget_password/page_script.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/users_v/forget_password/page_style.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/controllers/Settings.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/models/Settings_model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/settings_v/add/content.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/settings_v/add/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/settings_v/add/page_script.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/settings_v/no_content/content.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/settings_v/no_content/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/settings_v/update/content.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/settings_v/update/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/settings_v/update/page_script.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/config/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/routes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Emailsettings.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Emailsettings.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Userop.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Userop.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Users.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/email_settings_v/login/content.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/email_settings_v/login/content.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/email_settings_v/update/content.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/email_settings_v/update/content.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/users_v/login/content.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/users_v/login/content.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/includes/left-aside.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/includes/left-aside.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,197 +25,55 @@
     <session id="-1902124036">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.23" value="1" />
-          <entry key="project.open.time.5" value="2" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.open.time.5" value="3" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="php" value="63" />
+          <entry key="php" value="76" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PHP" value="63" />
+          <entry key="PHP" value="76" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="php" value="4346" />
+          <entry key="php" value="5452" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="4346" />
+          <entry key="PHP" value="5452" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/Userop.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="30" column="12" lean-forward="true" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
-              <folding>
-                <element signature="n#__construct#0;n#Userop#0;n#!!top" />
-                <element signature="n#login#0;n#Userop#0;n#!!top" />
-                <element signature="e#278#346#0#PHP" />
-                <element signature="n#do_login#0;n#Userop#0;n#!!top" />
-                <element signature="e#679#747#0#PHP" />
-                <element signature="e#997#1227#0#PHP" />
-                <element signature="e#1046#1217#1#PHP" />
-                <element signature="e#1290#2627#0#PHP" />
-                <element signature="e#1675#2627#0#PHP" />
-                <element signature="e#1702#1957#0#PHP" />
-                <element signature="e#1742#1943#1#PHP" />
-                <element signature="e#1972#2617#0#PHP" />
-                <element signature="e#2010#2137#0#PHP" />
-                <element signature="e#2317#2617#0#PHP" />
-                <element signature="e#2349#2493#0#PHP" />
-                <element signature="n#logout#0;n#Userop#0;n#!!top" />
-                <element signature="n#send_email#0;n#Userop#0;n#!!top" />
-                <element signature="e#2821#3216#0#PHP" />
-                <element signature="e#3527#3639#0#PHP" />
-                <element signature="e#3579#3639#0#PHP" />
-                <element signature="n#forget_password#0;n#Userop#0;n#!!top" />
-                <element signature="e#3695#3763#0#PHP" />
-                <element signature="n#reset_password#0;n#Userop#0;n#!!top" />
-                <element signature="e#4776#5300#0#PHP" />
-                <element signature="e#4825#5290#1#PHP" />
-                <element signature="e#4627#7303#0#PHP" />
-                <element signature="e#4664#4838#0#PHP" />
-                <element signature="e#4703#4823#1#PHP" />
-                <element signature="e#4852#6906#0#PHP" />
-                <element signature="e#4940#5145#0#PHP" />
-                <element signature="e#4993#5126#1#PHP" />
-                <element signature="e#4928#5323#0#PHP" />
-                <element signature="e#6145#6588#0#PHP" />
-                <element signature="e#6216#6475#0#PHP" />
-                <element signature="e#6267#6328#1#PHP" />
-                <element signature="e#6371#6453#0#PHP" />
-                <element signature="e#6521#6648#0#PHP" />
-                <element signature="e#6017#6093#0#PHP" />
-                <element signature="e#6110#6411#0#PHP" />
-                <element signature="e#6142#6275#0#PHP" />
-                <element signature="e#6919#7303#0#PHP" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/users_v/forget_password/content.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="16" column="68" lean-forward="true" selection-start-line="16" selection-start-column="68" selection-end-line="16" selection-end-column="68" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/controllers/Users.php">
+        <entry file="file://$PROJECT_DIR$/application/controllers/Settings.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="322" column="5" lean-forward="true" selection-start-line="322" selection-start-column="5" selection-end-line="322" selection-end-column="5" />
-              <folding>
-                <element signature="n#__construct#0;n#Users#0;n#!!top" />
-                <element signature="e#236#312#0#PHP" />
-                <element signature="n#index#0;n#Users#0;n#!!top" />
-                <element signature="e#457#514#0#PHP" />
-                <element signature="n#new_form#0;n#Users#0;n#!!top" />
-                <element signature="n#save#0;n#Users#0;n#!!top" />
-                <element signature="e#1786#2310#0#PHP" />
-                <element signature="e#1835#2300#1#PHP" />
-                <element signature="e#2439#3909#0#PHP" />
-                <element signature="e#2478#2919#0#PHP" />
-                <element signature="e#2518#2905#1#PHP" />
-                <element signature="e#2934#3358#0#PHP" />
-                <element signature="e#2974#3113#0#PHP" />
-                <element signature="e#3130#3358#0#PHP" />
-                <element signature="e#3162#3295#0#PHP" />
-                <element signature="e#3537#3909#0#PHP" />
-                <element signature="e#3919#3934#0#PHP" />
-                <element signature="n#update#0;n#Users#0;n#!!top" />
-                <element signature="e#4144#4238#0#PHP" />
-                <element signature="e#4180#4228#1#PHP" />
-                <element signature="e#4249#4449#0#PHP" />
-                <element signature="e#4459#4648#0#PHP" />
-                <element signature="e#4773#5083#0#PHP" />
-                <element signature="e#4822#5073#1#PHP" />
-                <element signature="e#5147#6532#0#PHP" />
-                <element signature="e#5188#5505#0#PHP" />
-                <element signature="e#5267#5491#0#PHP" />
-                <element signature="e#5520#5898#0#PHP" />
-                <element signature="e#5560#5699#0#PHP" />
-                <element signature="e#5716#5898#0#PHP" />
-                <element signature="e#5748#5881#0#PHP" />
-                <element signature="e#6014#6532#0#PHP" />
-                <element signature="e#6307#6418#0#PHP" />
-                <element signature="e#6347#6404#1#PHP" />
-                <element signature="n#update_password#0;n#Users#0;n#!!top" />
-                <element signature="e#6926#7290#0#PHP" />
-                <element signature="e#6975#7280#1#PHP" />
-                <element signature="e#7354#8605#0#PHP" />
-                <element signature="e#7395#7583#0#PHP" />
-                <element signature="e#7474#7569#0#PHP" />
-                <element signature="e#7593#7969#0#PHP" />
-                <element signature="e#7633#7772#0#PHP" />
-                <element signature="e#7789#7969#0#PHP" />
-                <element signature="e#7821#7954#0#PHP" />
-                <element signature="e#8085#8605#0#PHP" />
-                <element signature="e#8380#8491#0#PHP" />
-                <element signature="e#8420#8477#1#PHP" />
-                <element signature="n#update_form#0;n#Users#0;n#!!top" />
-                <element signature="e#8758#8853#0#PHP" />
-                <element signature="e#8794#8843#1#PHP" />
-                <element signature="n#update_password_form#0;n#Users#0;n#!!top" />
-                <element signature="e#9311#9406#0#PHP" />
-                <element signature="e#9347#9396#1#PHP" />
-                <element signature="n#delete#0;n#Users#0;n#!!top" />
-                <element signature="e#9770#9867#0#PHP" />
-                <element signature="e#9809#9857#1#PHP" />
-                <element signature="e#9878#10258#0#PHP" />
-                <element signature="e#9914#10041#0#PHP" />
-                <element signature="e#10054#10258#0#PHP" />
-                <element signature="e#10082#10203#0#PHP" />
-                <element signature="n#isActiveSetter#0;n#Users#0;n#!!top" />
-                <element signature="e#10477#10785#0#PHP" />
-                <element signature="e#10575#10774#0#PHP" />
-                <element signature="e#10618#10674#0#PHP" />
-                <element signature="e#10692#10760#0#PHP" />
-                <element signature="n#rankSetter#0;n#Users#0;n#!!top" />
-                <element signature="e#10955#11246#0#PHP" />
-                <element signature="e#11003#11234#0#PHP" />
-                <element signature="e#11046#11142#0#PHP" />
-                <element signature="e#11160#11220#0#PHP" />
-                <element signature="e#11260#11293#0#PHP" />
-              </folding>
+            <state relative-caret-position="253">
+              <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/users_v/add/content.php">
+        <entry file="file://$PROJECT_DIR$/application/views/settings_v/add/content.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="14" column="175" selection-start-line="14" selection-start-column="104" selection-end-line="14" selection-end-column="175" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/config/routes.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="668">
-              <caret line="59" column="49" selection-start-line="59" selection-start-column="49" selection-end-line="59" selection-end-column="49" />
+            <state relative-caret-position="253">
+              <caret line="164" column="92" lean-forward="true" selection-start-line="164" selection-start-column="92" selection-end-line="164" selection-end-column="92" />
             </state>
           </provider>
         </entry>
@@ -230,20 +88,26 @@
       <find>viewFolder</find>
       <find>subViewFolder</find>
       <find>Infi</find>
-      <find>&quot;users&quot;</find>
-      <find>user_model</find>
       <find>email</find>
       <find>valid_em</find>
-      <find>users</find>
       <find>update_for</find>
       <find>delete</find>
       <find>gonerici</find>
+      <find>&quot;users&quot;</find>
+      <find>user_model</find>
+      <find>users</find>
+      <find>img_url</find>
+      <find>brand_model</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;emailsettings&quot;</replace>
       <replace>emailsettings_model</replace>
       <replace>emailsettings</replace>
       <replace>emailsettings&quot;</replace>
+      <replace>&quot;settings&quot;</replace>
+      <replace>settings</replace>
+      <replace>logo</replace>
+      <replace>settings_model</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -268,7 +132,6 @@
         <option value="$PROJECT_DIR$/application/views/includes/navbar.php" />
         <option value="$PROJECT_DIR$/application/controllers/Emailsetting.php" />
         <option value="$PROJECT_DIR$/application/models/Emailsettings_model.php" />
-        <option value="$PROJECT_DIR$/application/views/includes/left-aside.php" />
         <option value="$PROJECT_DIR$/application/views/email_settings_v/list/content.php" />
         <option value="$PROJECT_DIR$/application/views/email_settings_v/add/content.php" />
         <option value="$PROJECT_DIR$/application/views/email_settings_v/update/content.php" />
@@ -279,6 +142,11 @@
         <option value="$PROJECT_DIR$/application/views/users_v/forget_password/content.php" />
         <option value="$PROJECT_DIR$/application/controllers/Userop.php" />
         <option value="$PROJECT_DIR$/application/controllers/Users.php" />
+        <option value="$PROJECT_DIR$/application/models/Settings_model.php" />
+        <option value="$PROJECT_DIR$/application/views/settings_v/no_content/content.php" />
+        <option value="$PROJECT_DIR$/application/views/includes/left-aside.php" />
+        <option value="$PROJECT_DIR$/application/views/settings_v/add/content.php" />
+        <option value="$PROJECT_DIR$/application/controllers/Settings.php" />
       </list>
     </option>
   </component>
@@ -289,10 +157,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="74" />
-    <option name="y" value="-15" />
-    <option name="width" value="1366" />
-    <option name="height" value="768" />
+    <option name="x" value="-20" />
+    <option name="y" value="-8" />
+    <option name="width" value="1380" />
+    <option name="height" value="752" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -302,7 +170,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -319,31 +186,34 @@
               <item name="adminizm" type="b2602c69:ProjectViewProjectNode" />
               <item name="adminizm" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adminizm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adminizm" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="adminizm" type="b2602c69:ProjectViewProjectNode" />
               <item name="adminizm" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="users_v" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="adminizm" type="b2602c69:ProjectViewProjectNode" />
               <item name="adminizm" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="users_v" type="462c0819:PsiDirectoryNode" />
-              <item name="add" type="462c0819:PsiDirectoryNode" />
+              <item name="uploads" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/wamp64/www/cms/adminizm/application/config/routes.php&#10;routes&#9;FILE&#9;file://C:/wamp64/www/cms/adminizm/application/config/routes.php&#10;left-&#9;FILE&#9;file://C:/wamp64/www/cms/adminizm/application/views/includes/left-aside.php&#10;left-as&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="left-as&#9;FILE&#9;file://C:/wamp64/www/cms/adminizm/application/views/includes/left-aside.php&#10;routes&#9;FILE&#9;file://C:/wamp64/www/cms/adminizm/application/config/routes.php&#10;left-&#9;FILE&#9;file://C:/wamp64/www/cms/adminizm/application/views/includes/left-aside.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -351,10 +221,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\cms\adminizm\application\views\users_v" />
       <recent name="C:\wamp64\www\cms\adminizm\application\views" />
       <recent name="C:\wamp64\www\cms\adminizm\application\models" />
       <recent name="C:\wamp64\www\cms\adminizm\application\controllers" />
+      <recent name="C:\wamp64\www\cms\adminizm\application\views\users_v" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -386,11 +256,13 @@
       <workItem from="1538563525790" duration="634000" />
       <workItem from="1538576793628" duration="2560000" />
       <workItem from="1538631456653" duration="8894000" />
+      <workItem from="1538728541383" duration="3652000" />
+      <workItem from="1538739884444" duration="8818000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30378000" />
+    <option name="totallyTimeSpent" value="42848000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
@@ -400,7 +272,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3292978" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -509,13 +381,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Brand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -544,13 +409,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/includes/left-aside.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="56" column="72" selection-start-line="56" selection-start-column="72" selection-end-line="56" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/email_settings_v/update/content.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="690">
@@ -569,9 +427,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
           <caret line="65" column="91" selection-start-line="65" selection-start-column="85" selection-end-line="65" selection-end-column="91" />
-          <folding>
-            <element signature="e#123#128#0#PHP" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -670,31 +525,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="668">
-          <caret line="59" column="49" selection-start-line="59" selection-start-column="49" selection-end-line="59" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/users_v/add/content.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="14" column="175" selection-start-line="14" selection-start-column="104" selection-end-line="14" selection-end-column="175" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/users_v/forget_password/content.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="16" column="68" lean-forward="true" selection-start-line="16" selection-start-column="68" selection-end-line="16" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Userop.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
-          <caret line="30" column="12" lean-forward="true" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+          <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
           <folding>
             <element signature="n#__construct#0;n#Userop#0;n#!!top" />
             <element signature="n#login#0;n#Userop#0;n#!!top" />
@@ -717,34 +551,37 @@
             <element signature="e#3527#3639#0#PHP" />
             <element signature="e#3579#3639#0#PHP" />
             <element signature="n#forget_password#0;n#Userop#0;n#!!top" />
-            <element signature="e#3695#3763#0#PHP" />
             <element signature="n#reset_password#0;n#Userop#0;n#!!top" />
-            <element signature="e#4776#5300#0#PHP" />
-            <element signature="e#4825#5290#1#PHP" />
-            <element signature="e#4627#7303#0#PHP" />
             <element signature="e#4664#4838#0#PHP" />
-            <element signature="e#4703#4823#1#PHP" />
-            <element signature="e#4852#6906#0#PHP" />
-            <element signature="e#4940#5145#0#PHP" />
-            <element signature="e#4993#5126#1#PHP" />
-            <element signature="e#4928#5323#0#PHP" />
-            <element signature="e#6145#6588#0#PHP" />
-            <element signature="e#6216#6475#0#PHP" />
-            <element signature="e#6267#6328#1#PHP" />
-            <element signature="e#6371#6453#0#PHP" />
-            <element signature="e#6521#6648#0#PHP" />
-            <element signature="e#6017#6093#0#PHP" />
-            <element signature="e#6110#6411#0#PHP" />
-            <element signature="e#6142#6275#0#PHP" />
-            <element signature="e#6919#7303#0#PHP" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/users_v/add/content.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="14" column="175" selection-start-line="14" selection-start-column="104" selection-end-line="14" selection-end-column="175" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1357">
+          <caret line="59" column="49" selection-start-line="59" selection-start-column="49" selection-end-line="59" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/core/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="966">
+          <caret line="42" column="61" lean-forward="true" selection-start-line="42" selection-start-column="61" selection-end-line="42" selection-end-column="61" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Users.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="322" column="5" lean-forward="true" selection-start-line="322" selection-start-column="5" selection-end-line="322" selection-end-column="5" />
+        <state relative-caret-position="667">
+          <caret line="405" column="7" lean-forward="true" selection-start-line="405" selection-start-column="7" selection-end-line="405" selection-end-column="7" />
           <folding>
             <element signature="n#__construct#0;n#Users#0;n#!!top" />
             <element signature="e#236#312#0#PHP" />
@@ -783,41 +620,94 @@
             <element signature="n#update_password#0;n#Users#0;n#!!top" />
             <element signature="e#6926#7290#0#PHP" />
             <element signature="e#6975#7280#1#PHP" />
-            <element signature="e#7354#8605#0#PHP" />
             <element signature="e#7395#7583#0#PHP" />
             <element signature="e#7474#7569#0#PHP" />
-            <element signature="e#7593#7969#0#PHP" />
-            <element signature="e#7633#7772#0#PHP" />
-            <element signature="e#7789#7969#0#PHP" />
-            <element signature="e#7821#7954#0#PHP" />
-            <element signature="e#8085#8605#0#PHP" />
-            <element signature="e#8380#8491#0#PHP" />
-            <element signature="e#8420#8477#1#PHP" />
             <element signature="n#update_form#0;n#Users#0;n#!!top" />
-            <element signature="e#8758#8853#0#PHP" />
-            <element signature="e#8794#8843#1#PHP" />
             <element signature="n#update_password_form#0;n#Users#0;n#!!top" />
-            <element signature="e#9311#9406#0#PHP" />
-            <element signature="e#9347#9396#1#PHP" />
             <element signature="n#delete#0;n#Users#0;n#!!top" />
-            <element signature="e#9770#9867#0#PHP" />
-            <element signature="e#9809#9857#1#PHP" />
-            <element signature="e#9878#10258#0#PHP" />
-            <element signature="e#9914#10041#0#PHP" />
-            <element signature="e#10054#10258#0#PHP" />
-            <element signature="e#10082#10203#0#PHP" />
             <element signature="n#isActiveSetter#0;n#Users#0;n#!!top" />
-            <element signature="e#10477#10785#0#PHP" />
-            <element signature="e#10575#10774#0#PHP" />
-            <element signature="e#10618#10674#0#PHP" />
-            <element signature="e#10692#10760#0#PHP" />
             <element signature="n#rankSetter#0;n#Users#0;n#!!top" />
-            <element signature="e#10955#11246#0#PHP" />
-            <element signature="e#11003#11234#0#PHP" />
-            <element signature="e#11046#11142#0#PHP" />
-            <element signature="e#11160#11220#0#PHP" />
-            <element signature="e#11260#11293#0#PHP" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/users_v/forget_password/content.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="81" selection-start-line="14" selection-start-column="81" selection-end-line="14" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Settings_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="40" lean-forward="true" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/dashboard_v/list/content.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/settings_v/no_content/content.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="15" column="67" selection-start-line="15" selection-start-column="67" selection-end-line="15" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/includes/left-aside.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="64" column="61" selection-start-line="64" selection-start-column="61" selection-end-line="64" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/references_v/add/content.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="22" column="68" selection-start-line="21" selection-start-column="24" selection-end-line="23" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/news_v/update/content.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="76" column="48" lean-forward="true" selection-start-line="73" selection-end-line="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/news_v/add/content.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="44" column="53" lean-forward="true" selection-start-line="44" selection-start-column="53" selection-end-line="44" selection-end-column="53" />
+          <folding>
+            <element signature="n#style#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/settings_v/add/content.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="164" column="92" lean-forward="true" selection-start-line="164" selection-start-column="92" selection-end-line="164" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Brand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="56" lean-forward="true" selection-start-line="53" selection-start-column="8" selection-end-line="150" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Settings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
         </state>
       </provider>
     </entry>
