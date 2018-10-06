@@ -60,10 +60,7 @@
                                     <label>Telefon 2</label>
                                     <input type="text" class="form-control" name="phone_2"
                                            placeholder="Diğer telefon numaranız (opsiyonel)"
-                                           value="<?php echo isset($form_error) ? set_value("phone_2") : "" ?>">
-                                    <?php if (isset($form_error)) { ?>
-                                        <small class="input-form-error"><?php echo form_error("phone_2") ?></small>
-                                    <?php } ?>
+                                    >
                                 </div>
                             </div>
 
@@ -72,19 +69,15 @@
                                     <label>Fax 1</label>
                                     <input type="text" class="form-control" name="fax_1"
                                            placeholder="Fax numarası"
-                                           value="<?php echo isset($form_error) ? set_value("fax_1") : "" ?>">
-                                    <?php if (isset($form_error)) { ?>
-                                        <small class="input-form-error"><?php echo form_error("fax_1") ?></small>
-                                    <?php } ?>
+                                    >
+
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label>Fax 2</label>
                                     <input type="text" class="form-control" name="fax_2"
                                            placeholder="Diğer fax numaranız (opsiyonel)"
-                                           value="<?php echo isset($form_error) ? set_value("fax_2") : "" ?>">
-                                    <?php if (isset($form_error)) { ?>
-                                        <small class="input-form-error"><?php echo form_error("fax_2") ?></small>
-                                    <?php } ?>
+                                    >
+
                                 </div>
                             </div>
 
@@ -92,7 +85,6 @@
 
                         <div role="tabpanel" class="tab-pane fade" id="tab-6">
                             <div class="form-group">
-                                <!--                                    <label>Adres Bilgisi</label>-->
                                 <textarea class="m-0" data-plugin="summernote" name="address"
                                           data-options="{height: 250}"></textarea>
                             </div>
@@ -100,7 +92,6 @@
 
                         <div role="tabpanel" class="tab-pane fade" id="tab-2">
                             <div class="form-group">
-                                <!--                                    <label>Hakkımızda</label>-->
                                 <textarea class="m-0" data-plugin="summernote" name="about_us"
                                           data-options="{height: 250}"></textarea>
                             </div>
@@ -108,7 +99,6 @@
 
                         <div role="tabpanel" class="tab-pane fade" id="tab-3">
                             <div class="form-group">
-                                <!--                                    <label>Vizyonumuz</label>-->
                                 <textarea class="m-0" data-plugin="summernote" name="vission"
                                           data-options="{height: 250}"></textarea>
                             </div>
@@ -116,7 +106,6 @@
 
                         <div role="tabpanel" class="tab-pane fade" id="tab-4">
                             <div class="form-group">
-                                <!--                                    <label>Misyonumuz</label>-->
                                 <textarea class="m-0" data-plugin="summernote" name="mission"
                                           data-options="{height: 250}"></textarea>
                             </div>
@@ -125,45 +114,39 @@
                         <div role="tabpanel" class="tab-pane fade" id="tab-5">
 
                             <div class="form-group">
+                                <label>E-Posta Adresi</label>
+                                <input type="email" class="form-control" name="email"
+                                       placeholder="Facebook adresiniz "
+                                       value="<?php echo isset($form_error) ? set_value("email") : "" ?>">
+                                <?php if (isset($form_error)) { ?>
+                                    <small class="input-form-error"><?php echo form_error("email") ?></small>
+                                <?php } ?>
+                            </div>
+
+                            <div class="form-group">
                                 <label>Facebook</label>
                                 <input type="text" class="form-control" name="facebook"
-                                       placeholder="Facebook adresiniz "
-                                       value="<?php echo isset($form_error) ? set_value("facebook") : "" ?>">
-                                <?php if (isset($form_error)) { ?>
-                                    <small class="input-form-error"><?php echo form_error("facebook") ?></small>
-                                <?php } ?>
+                                       placeholder="Facebook adresiniz ">
                             </div>
 
                             <div class="form-group">
                                 <label>Twitter</label>
                                 <input type="text" class="form-control" name="twitter"
-                                       placeholder="Twitter adresiniz "
-                                       value="<?php echo isset($form_error) ? set_value("twitter") : "" ?>">
-                                <?php if (isset($form_error)) { ?>
-                                    <small class="input-form-error"><?php echo form_error("twitter") ?></small>
-                                <?php } ?>
+                                       placeholder="Twitter adresiniz ">
                             </div>
 
 
                             <div class="form-group">
                                 <label>Instagram</label>
                                 <input type="text" class="form-control" name="instagram"
-                                       placeholder="Instagram adresiniz "
-                                       value="<?php echo isset($form_error) ? set_value("instagram") : "" ?>">
-                                <?php if (isset($form_error)) { ?>
-                                    <small class="input-form-error"><?php echo form_error("instagram") ?></small>
-                                <?php } ?>
+                                       placeholder="Instagram adresiniz ">
                             </div>
 
 
                             <div class="form-group">
                                 <label>Twitter</label>
                                 <input type="text" class="form-control" name="linkedin"
-                                       placeholder="Linkedin adresiniz "
-                                       value="<?php echo isset($form_error) ? set_value("linkedin") : "" ?>">
-                                <?php if (isset($form_error)) { ?>
-                                    <small class="input-form-error"><?php echo form_error("linkedin") ?></small>
-                                <?php } ?>
+                                       placeholder="Linkedin adresiniz ">
                             </div>
 
 

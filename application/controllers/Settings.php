@@ -77,7 +77,7 @@ class Settings extends CI_Controller
 
 
         if ($validate) {
-            $file_name = convertToSEO(pathinfo($_FILES["logo"]["name"], PATHINFO_FILENAME)) . "." . pathinfo($_FILES["logo"]["name"], PATHINFO_EXTENSION);
+            $file_name = convertToSEO($this->input->post("company_name")) . "." . pathinfo($_FILES["logo"]["name"], PATHINFO_EXTENSION);
 
             $config["allowed_types"] = "jpg|jpeg|png";
             $config["upload_path"] = "uploads/$this->viewFolder/";
@@ -93,10 +93,22 @@ class Settings extends CI_Controller
 
                 $insert = $this->settings_model->add(
                     $data = array(
-                        "title" => $this->input->post("title"),
+                        "company_name" => $this->input->post("company_name"),
+                        "phone_1" => $this->input->post("phone_1"),
+                        "phone_2" => $this->input->post("phone_2"),
+                        "fax_1" => $this->input->post("fax_1"),
+                        "fax_2" => $this->input->post("fax_2"),
+                        "address" => $this->input->post("address"),
+                        "about_us" => $this->input->post("about_us"),
+                        "mission" => $this->input->post("mission"),
+                        "vision" => $this->input->post("vission"),
+                        "email" => $this->input->post("email"),
+                        "facebook" => $this->input->post("facebook"),
+                        "twitter" => $this->input->post("twitter"),
+                        "instagram" => $this->input->post("instagram"),
+                        "linkedin" => $this->input->post("linkedin"),
+
                         "logo" => $uploaded_file,
-                        "rank" => 0,
-                        "isActive" => 1,
                         "createdAt" => date("Y-m-d H:i:s")
                     ));
 
@@ -113,7 +125,7 @@ class Settings extends CI_Controller
                     );
 
 
-                    redirect(base_url("brand"));
+                    redirect(base_url("settings"));
 
                 }
 
@@ -124,15 +136,13 @@ class Settings extends CI_Controller
                 );
                 $this->session->set_flashdata("alert", $alert);
 
-                redirect(base_url("brand/new_form"));
+                redirect(base_url("settings/new_form"));
             }
 
 
-            // ' işlemin sonucunu sessiona yazdırdım. unutma!
-
             $this->session->set_flashdata("alert", $alert);
 
-            redirect(base_url("brand"));
+            redirect(base_url("settings"));
 
         } else {
 
@@ -149,29 +159,16 @@ class Settings extends CI_Controller
 
     public function update($id)
     {
-
         $this->load->library("form_validation");
-        $oldUser = $this->settings_model->get(
-            array(
-                "id" => $id
-            )
-        );
 
-        if ($oldUser->kullanici_adi != $this->input->post("user_name")) {
-            $this->form_validation->set_rules("user_name", "Kullanıcı Adı", "required|trim|is_unique[users.kullanici_adi]");
-        }
-
-        if ($oldUser->email != $this->input->post("email")) {
-            $this->form_validation->set_rules("email", "E-Posta Adresi", "required|trim|valid_email|is_unique[users.email]");
-        }
-        // Kurallar yazilir..
-        $this->form_validation->set_rules("full_name", "Ad Soyad", "required|trim");
+        $this->form_validation->set_rules("company_name", "Şirket Adı / Firma Adı", "required|trim");
+        $this->form_validation->set_rules("phone_1", "Telefon Numarası (1)", "required|trim");
+        $this->form_validation->set_rules("email", "E-Posta Adresi", "required|trim|valid_email");
 
         $this->form_validation->set_message(
             array(
-                "required" => "<b>{field}</b> alanı doldurulmalıdır.",
-                "valid_email" => "Lütfen geçerli bir e-posta adresi giriniz.",
-                "is_unique" => "<b>{field}</b> alanı daha önceden kullanılmış.",
+                "required" => "<b>{field}</b> alanı doldurulmalıdır",
+                "valid_email" => "Lütfen geçerli bir <b>{field}</b> adresi giriniz."
             )
         );
 
@@ -180,15 +177,72 @@ class Settings extends CI_Controller
 
         if ($validate) {
 
+            if ($_FILES["logo"]["name"] !== "") {
 
-            $update = $this->settings_model->update(
-                array("id" => $id),
-                array(
-                    "kullanici_adi" => $this->input->post("user_name"),
-                    "full_name" => $this->input->post("full_name"),
-                    "email" => $this->input->post("email"),
-                )
-            );
+
+                $file_name = convertToSEO($this->input->post("company_name")) . "." . pathinfo($_FILES["logo"]["name"], PATHINFO_EXTENSION);
+
+                $config["allowed_types"] = "jpg|jpeg|png";
+                $config["upload_path"] = "uploads/$this->viewFolder/";
+                $config["file_name"] = $file_name;
+
+                $this->load->library("upload", $config);
+
+                $upload = $this->upload->do_upload("logo");
+
+                if ($upload) {
+
+                    $uploaded_file = $this->upload->data("file_name");
+                    
+                    $data = array(
+                        "company_name" => $this->input->post("company_name"),
+                        "phone_1" => $this->input->post("phone_1"),
+                        "phone_2" => $this->input->post("phone_2"),
+                        "fax_1" => $this->input->post("fax_1"),
+                        "fax_2" => $this->input->post("fax_2"),
+                        "address" => $this->input->post("address"),
+                        "about_us" => $this->input->post("about_us"),
+                        "mission" => $this->input->post("mission"),
+                        "vision" => $this->input->post("vission"),
+                        "email" => $this->input->post("email"),
+                        "facebook" => $this->input->post("facebook"),
+                        "twitter" => $this->input->post("twitter"),
+                        "instagram" => $this->input->post("instagram"),
+                        "linkedin" => $this->input->post("linkedin"),
+                        "logo" => $uploaded_file,
+                        "updatedAt" => date("Y-m-d H:i:s")
+                    );
+
+                } else {
+                    $alert = array(
+                        "text" => "Hata! Lütfen işleminizi kontrol edin.",
+                        "type" => "error"
+                    );
+                    $this->session->set_flashdata("alert", $alert);
+
+                    redirect(base_url("settings"));
+                }
+            } else {
+                $data = array(
+                    "company_name"  => $this->input->post("company_name"),
+                    "phone_1"       => $this->input->post("phone_1"),
+                    "phone_2"       => $this->input->post("phone_2"),
+                    "fax_1"         => $this->input->post("fax_1"),
+                    "fax_2"         => $this->input->post("fax_2"),
+                    "address"       => $this->input->post("address"),
+                    "about_us"      => $this->input->post("about_us"),
+                    "mission"       => $this->input->post("mission"),
+                    "vision"        => $this->input->post("vission"),
+                    "email"         => $this->input->post("email"),
+                    "facebook"      => $this->input->post("facebook"),
+                    "twitter"       => $this->input->post("twitter"),
+                    "instagram"     => $this->input->post("instagram"),
+                    "linkedin"      => $this->input->post("linkedin"),
+                    "updatedAt" => date("Y-m-d H:i:s")
+                );
+            }
+
+            $update = $this->settings_model->update(array("id" => $id), $data);
 
             if ($update) {
                 $alert = array(
@@ -202,6 +256,8 @@ class Settings extends CI_Controller
                     "type" => "error"
                 );
 
+
+                redirect(base_url("settings/update_form/$id"));
 
             }
 
