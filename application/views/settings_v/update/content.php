@@ -27,8 +27,6 @@
                                                    data-toggle="tab">Logo</a></li>
                     </ul><!-- .nav-tabs -->
 
-                    <!-- Tab panes -->
-
                     <div class="tab-content p-md">
                         <div role="tabpanel" class="tab-pane in active fade" id="tab-1">
 
@@ -44,8 +42,6 @@
                                                 class="pull-right input-form-error"> <?php echo form_error("company_name"); ?></small>
                                     <?php } ?>
                                 </div>
-
-
 
                             </div>
 

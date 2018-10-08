@@ -1,3 +1,4 @@
+<?php $settings = get_settings(); ?>
 <nav id="app-navbar" class="navbar navbar-inverse navbar-fixed-top primary">
 
     <div class="navbar-header">
@@ -17,8 +18,12 @@
         </button>
 
         <a href="../index.html" class="navbar-brand">
-            <span class="brand-icon"><i class="fa fa-gg"></i></span>
-            <span class="brand-name">adminizm</span>
+            <span class="brand-icon">
+                <img src="<?php echo "uploads/$viewFolder/$settings->logo" ;?>" alt="" class="img-responsive">
+            </span>
+            <span class="brand-name">
+                <?php echo $settings->company_name; ?>
+            </span>
         </a>
     </div>
 

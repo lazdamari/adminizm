@@ -11,6 +11,7 @@ class Settings extends CI_Controller
 
         $this->viewFolder = "settings_v";
         $this->load->model("settings_model");
+        $this->load->helper("tools_helper");
         if (!get_active_user()) {
             redirect(base_url("login"));
         }
