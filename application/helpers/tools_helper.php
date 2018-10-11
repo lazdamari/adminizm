@@ -28,19 +28,22 @@ function get_active_user()
 
 function get_settings()
 {
-//    $b = &get_instance();
-//
-//    $b->load->model("settings_model");
-//
-//    $settings = $b->settings_model->get();
-//
-//    return $settings;
+    $t = &get_instance();
+    $t->load->model("settings_model");
 
+        if ($t->session->userdata("settings")){
+            $settings= $t->session->userdata("settings");
+        }else{
+            $settings = $t->settings_model->get();
+            if (!$settings) {
+                $settings = new stdClass();
+                $settings->company_name = "adminizm";
+                $settings->logo         = "default";
+            }
 
+            $t->session->set_userdata("settings",$settings);
+        }
 
-    $b = &get_instance();
-    $b->load->model("settings_model");
-    $result = $b->settings_model->get();
-    return $result;
+    return $settings;
 
 }

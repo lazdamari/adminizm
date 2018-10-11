@@ -1,17 +1,21 @@
 <?php $user = get_active_user(); ?>
+<?php $settings = get_settings(); ?>
 <aside id="menubar" class="menubar light">
     <div class="app-user">
         <div class="media">
             <div class="media-left">
-                <div class="avatar avatar-md avatar-circle">
-                    <a href="javascript:void(0)"><img class="img-responsive"
-                                                      src="<?php echo base_url('assets') ?>/assets/images/221.jpg"
-                                                      alt="avatar"/></a>
-                </div><!-- .avatar -->
+                <div class="avatar">
+                    <a href="javascript:void(0)">
+                        <img class="img-rounded"
+                             src="<?php echo base_url("assets/") ?>assets/images/flags/Turkey.png"
+                             alt="avatar"
+                        />
+                    </a>
+                </div>
             </div>
             <div class="media-body">
                 <div class="foldable">
-                    <h5><a href="javascript:void(0)" class="username"><?php  echo $user->full_name  ?></a></h5>
+                    <h5><a href="javascript:void(0)" class="username"><?php echo $user->full_name ?></a></h5>
                     <ul>
                         <li class="dropdown">
                             <a href="javascript:void(0)" class="dropdown-toggle usertitle" data-toggle="dropdown"
@@ -21,7 +25,7 @@
                             </a>
                             <ul class="dropdown-menu animated flipInY">
                                 <li>
-                                    <a class="text-color" href="<?php echo base_url("dashboard")?>">
+                                    <a class="text-color" href="<?php echo base_url("dashboard") ?>">
                                         <span class="m-r-xs"><i class="fa fa-home"></i></span>
                                         <span>Anasayfa</span>
                                     </a>
@@ -35,7 +39,7 @@
 
                                 <li role="separator" class="divider"></li>
                                 <li>
-                                    <a class="text-color" href="<?php echo base_url("logout")?>">
+                                    <a class="text-color" href="<?php echo base_url("logout") ?>">
                                         <span class="m-r-xs"><i class="fa fa-power-off"></i></span>
                                         <span>Çıkış Yap</span>
                                     </a>
@@ -44,9 +48,9 @@
                         </li>
                     </ul>
                 </div>
-            </div><!-- .media-body -->
-        </div><!-- .media -->
-    </div><!-- .app-user -->
+            </div>
+        </div>
+    </div>
 
     <div class="menubar-scroll">
         <div class="menubar-scroll-inner">
@@ -60,17 +64,19 @@
                 </li>
 
                 <li>
-                    <a href="<?php  echo base_url("settings")?>">
+                    <a href="<?php echo base_url("settings") ?>">
                         <i class="menu-icon zmdi zmdi-settings zmdi-hc-lg"></i>
                         <span class="menu-text">Site Ayarları</span>
                     </a>
                 </li>
+
                 <li>
-                    <a href="<?php  echo base_url("emailsettings")?>">
+                    <a href="<?php echo base_url("emailsettings") ?>">
                         <i class="menu-icon zmdi zmdi-email zmdi-hc-lg"></i>
                         <span class="menu-text">E-Posta Ayarları</span>
                     </a>
                 </li>
+
                 <li>
                     <a href="<?php echo base_url("galleries"); ?>">
                         <i class="menu-icon zmdi zmdi-apps zmdi-hc-lg"></i>
@@ -114,6 +120,35 @@
                 </li>
 
                 <li>
+                    <a href="<?php echo base_url('services'); ?>">
+                        <i class="menu-icon zmdi zmdi-cutlery zmdi-hc-lg"></i>
+                        <span class="menu-text">Hizmetler</span>
+                    </a>
+                </li>
+
+
+                <li class="has-submenu">
+                    <a href="javascript:void(0)" class="submenu-toggle">
+                        <i class="menu-icon fa fa-asterisk"></i>
+                        <span class="menu-text">Portfolyo</span>
+                        <i class="menu-caret zmdi zmdi-hc-sm zmdi-chevron-right"></i>
+                    </a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="<?php echo base_url("portfolio_categories"); ?>">
+                                <span class="menu-text">Portfolyo Kategoriler</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php echo base_url(); ?>">
+                                <span class="menu-text">Portfolyo</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <li>
                     <a href="<?php echo base_url('brand'); ?>">
                         <i class="menu-icon zmdi zmdi-puzzle-piece zmdi-hc-lg"></i>
                         <span class="menu-text">Markalar</span>
@@ -141,8 +176,7 @@
                     </a>
                 </li>
 
-
-            </ul><!-- .app-menu -->
-        </div><!-- .menubar-scroll-inner -->
-    </div><!-- .menubar-scroll -->
+            </ul>
+        </div>
+    </div>
 </aside>

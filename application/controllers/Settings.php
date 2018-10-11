@@ -262,6 +262,8 @@ class Settings extends CI_Controller
 
             }
 
+            $settings = $this->settings_model->get();
+            $this->session->set_userdata("settings",$settings);
 
             $this->session->set_flashdata("alert", $alert);
 

@@ -17,9 +17,14 @@
             <span class="zmdi zmdi-hc-lg zmdi-search"></span>
         </button>
 
-        <a href="../index.html" class="navbar-brand">
+        <a href="<?php echo base_url();?>" class="navbar-brand">
             <span class="brand-icon">
-                <img src="<?php echo "uploads/$viewFolder/$settings->logo" ;?>" alt="" class="img-responsive">
+                <?php if($settings->logo != "default") {?>
+                    <img src="<?php echo base_url("/uploads/settings_v/$settings->logo") ;?>" alt="" class="img-responsive">
+                <?php } else {?>
+                    <img src="<?php echo base_url("assets/assets/images/index/infinity-logo.png") ;?>" alt="" class="img-responsive">
+                <?php } ?>
+
             </span>
             <span class="brand-name">
                 <?php echo $settings->company_name; ?>
