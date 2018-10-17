@@ -20,7 +20,7 @@
         <a href="<?php echo base_url();?>" class="navbar-brand">
             <span class="brand-icon">
                 <?php if($settings->logo != "default") {?>
-                    <img src="<?php echo base_url("/uploads/settings_v/$settings->logo") ;?>" alt="" class="img-responsive">
+                    <img src="<?php echo base_url("/uploads/settings_v/$settings->logo") ;?>" alt="" width="30" class="img-responsive">
                 <?php } else {?>
                     <img src="<?php echo base_url("assets/assets/images/index/infinity-logo.png") ;?>" alt="" class="img-responsive">
                 <?php } ?>
@@ -59,7 +59,7 @@
                             <div class="media">
                                 <div class="media-left">
                                     <div class="avatar avatar-xs avatar-circle">
-                                        <img src="<?php echo base_url('assets') ?>/assets/images/221.jpg" alt="">
+                                        <img src="<?php echo base_url('assets') ?>/assets/images/165.jpg" alt="">
                                         <i class="status status-online"></i>
                                     </div>
                                 </div>

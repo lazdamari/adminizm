@@ -6,8 +6,8 @@
             <div class="media-left">
                 <div class="avatar">
                     <a href="javascript:void(0)">
-                        <img class="img-rounded"
-                             src="<?php echo base_url("assets/") ?>assets/images/flags/Turkey.png"
+                        <img class="img-circle"
+                             src="<?php echo base_url("assets/") ?>assets/images/206.jpg"
                              alt="avatar"
                         />
                     </a>
@@ -140,7 +140,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="<?php echo base_url(); ?>">
+                            <a href="<?php echo base_url("portfolio"); ?>">
                                 <span class="menu-text">Portfolyo</span>
                             </a>
                         </li>
